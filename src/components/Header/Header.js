@@ -1,23 +1,28 @@
+import './Header.css'
 import { Link } from 'react-router-dom'
+import { ReactComponent as Logo } from './AppLogo.svg'
 
 function Header() {
   return (
     <nav>
+      <div>
+        <Logo className="app-logo" />
+      </div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link className="page-link" to="/resume">
+            Resume
+          </Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link className="page-link" to="/portfolio">
+            Portfolio
+          </Link>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link to="/hobbies">Hobbies</Link>
+          <Link className="page-link" to="/hobbies">
+            Hobbies
+          </Link>
         </li>
       </ul>
     </nav>
