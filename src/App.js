@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header/Header.js'
 import Footer from './components/Footer/Footer.js'
@@ -7,9 +6,21 @@ import Resume from './pages/Resume/Resume.js'
 import Portfolio from './pages/Portfolio/Portfolio.js'
 import Hobbies from './pages/Hobbies/Hobbies.js'
 
+import { makeStyles } from '@material-ui/core/styles'
+
+const useStyles = makeStyles((theme) => ({
+  App: {
+    backgroundColor: theme.palette.background.default,
+    minHeight: '100vh',
+    minWidth: '100vw',
+  },
+}))
+
 function App() {
+  const { App } = useStyles()
+
   return (
-    <div className="App">
+    <div className={App}>
       <Router>
         <Header />
         <Switch>

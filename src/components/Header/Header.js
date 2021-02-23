@@ -1,31 +1,94 @@
-import './Header.css'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Logo } from './AppLogo.svg'
+import Grid from '@material-ui/core/Grid'
+import { useHistory } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles'
 
-function Header() {
+const useStyles = makeStyles((theme) => ({
+  header: {
+    [theme.breakpoints.up('xs')]: {
+      padding: '0 20px',
+    },
+    [theme.breakpoints.up('sm')]: {
+      padding: '0 100px',
+    },
+  },
+  logoContainer: {
+    display: 'flex',
+    [theme.breakpoints.up('xs')]: {
+      justifyContent: 'center',
+    },
+    [theme.breakpoints.up('sm')]: {
+      justifyContent: 'flex-start',
+      paddingLeft: '35px',
+    },
+  },
+  linkContainer: {
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+    },
+  },
+  appLogo: {
+    width: '60px',
+    maxHeight: '60px',
+    [theme.breakpoints.up('xs')]: {
+      width: '45px',
+      maxHeight: '45px',
+      marginBottom: '15px',
+      marginTop: '10px',
+    },
+  },
+  pageLink: {
+    color: theme.palette.primary.main,
+    display: 'flex',
+    justifyContent: 'center',
+    textDecoration: 'none',
+    fontSize: '18px',
+  },
+  horizontalLine: {
+    border: 0,
+    width: '100%',
+    backgroundColor: theme.palette.secondary.dark,
+    height: '1px',
+    margin: '0',
+  },
+}))
+
+function Header(props) {
+  const {
+    appLogo,
+    pageLink,
+    horizontalLine,
+    logoContainer,
+    linkContainer,
+    header,
+  } = useStyles()
+  const history = useHistory()
+
   return (
-    <nav>
-      <div>
-        <Logo className="app-logo" />
-      </div>
-      <ul>
-        <li>
-          <Link className="page-link" to="/resume">
-            Resume
-          </Link>
-        </li>
-        <li>
-          <Link className="page-link" to="/portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link className="page-link" to="/hobbies">
-            Hobbies
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <Grid container className={header}>
+      <Grid item xs={12} sm={6} md={6} lg={6} className={logoContainer}>
+        <Logo onClick={() => history.push('/')} className={appLogo} />
+      </Grid>
+      <Grid item xs={4} sm={2} md={2} lg={2} className={linkContainer}>
+        <Link className={pageLink} to="/resume">
+          Resume
+        </Link>
+      </Grid>
+      <Grid item xs={4} sm={2} md={2} lg={2} className={linkContainer}>
+        <Link className={pageLink} to="/portfolio">
+          Portfolio
+        </Link>
+      </Grid>
+      <Grid item xs={4} sm={2} md={2} lg={2} className={linkContainer}>
+        <Link className={pageLink} to="/hobbies">
+          Hobbies
+        </Link>
+      </Grid>
+      <hr className={horizontalLine} />
+    </Grid>
   )
 }
 
