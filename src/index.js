@@ -43,6 +43,7 @@ export const theme = createMuiTheme({
     type: 'dark',
     background: {
       default: '#1D2731',
+      footer: ' #121a21',
     },
   },
   typography: {

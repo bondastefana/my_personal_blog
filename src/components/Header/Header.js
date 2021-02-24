@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       padding: '0 100px',
     },
+    backgroundColor: theme.palette.background.footer,
   },
   logoContainer: {
     display: 'flex',
@@ -47,20 +48,13 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     fontSize: '18px',
   },
-  horizontalLine: {
-    border: 0,
-    width: '100%',
-    backgroundColor: theme.palette.secondary.dark,
-    height: '1px',
-    margin: '0',
-  },
 }))
 
 function Header(props) {
   const {
     appLogo,
     pageLink,
-    horizontalLine,
+
     logoContainer,
     linkContainer,
     header,
@@ -87,7 +81,6 @@ function Header(props) {
           Hobbies
         </Link>
       </Grid>
-      <hr className={horizontalLine} />
     </Grid>
   )
 }
