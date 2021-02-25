@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import projectsData from '../../components/ProjectCard/staticData.js'
 import ProjectCard from '../../components/ProjectCard/ProjectCard.js'
@@ -26,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(3),
     },
   },
+  paper: {
+    [theme.breakpoints.up('sm')]: {
+      margin: 'auto -20px',
+    },
+    padding: '6px 16px',
+  },
 }))
 
 function Portfolio(props) {
@@ -34,26 +40,29 @@ function Portfolio(props) {
     title,
     titlePadding,
     titleContainer,
+    paper,
   } = useStyles()
 
   return (
     <Grid container className={portfolioContainer}>
       <Grid item xs={12} className={titleContainer}>
-        <Typography variant="h5" className={title}>
-          {'if (youWant() === true) {'}
-        </Typography>
-        <Typography variant="h5" className={titlePadding}>
-          {'youCan();'}
-        </Typography>
-        <Typography variant="h5" className={title}>
-          {'} else {'}
-        </Typography>
-        <Typography variant="h5" className={titlePadding}>
-          {'youCant();'}
-        </Typography>
-        <Typography variant="h5" className={title}>
-          {'}'}
-        </Typography>
+        <Paper elevation={3} className={paper}>
+          <Typography variant="h5" className={title}>
+            {'if (youWant() === true) {'}
+          </Typography>
+          <Typography variant="h5" className={titlePadding}>
+            {'youCan();'}
+          </Typography>
+          <Typography variant="h5" className={title}>
+            {'} else {'}
+          </Typography>
+          <Typography variant="h5" className={titlePadding}>
+            {'youCant();'}
+          </Typography>
+          <Typography variant="h5" className={title}>
+            {'}'}
+          </Typography>
+        </Paper>
       </Grid>
       {projectsData.map((project, index) => {
         return (

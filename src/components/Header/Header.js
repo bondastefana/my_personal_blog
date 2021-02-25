@@ -34,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
   appLogo: {
     width: '60px',
     maxHeight: '60px',
+    '&:hover': {
+      cursor: 'pointer',
+    },
     [theme.breakpoints.up('xs')]: {
       width: '45px',
       maxHeight: '45px',
@@ -47,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     textDecoration: 'none',
     fontSize: '18px',
+    '&:hover': {
+      color: theme.palette.secondary.main,
+    },
   },
 }))
 

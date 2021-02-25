@@ -3,16 +3,14 @@ import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Avatar from '@material-ui/core/Avatar'
 import Divider from '@material-ui/core/Divider'
-import Button from '@material-ui/core/Button'
-import Box from '@material-ui/core/Box'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import Paper from '@material-ui/core/Paper'
+import Icons from '../../components/Icons/Icons.js'
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
     padding: '20px 50px',
     [theme.breakpoints.up('sm')]: {
-      padding: '20px 100px',
+      padding: '45px 100px',
     },
   },
   avatar: {
@@ -33,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    paddingBottom: '20px',
     [theme.breakpoints.up('sm')]: {
       paddingTop: '20px',
       paddingBottom: '25px',
@@ -44,6 +41,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   aboutMe: {
+    marginTop: '20px',
+    textAlign: 'center',
     [theme.breakpoints.up('md')]: {
       fontSize: '25px',
     },
@@ -69,6 +68,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     padding: '40px',
   },
+  paper: {
+    padding: '6px 16px',
+    display: 'flex',
+    justifyContent: 'center',
+  },
 }))
 
 function Home(props) {
@@ -80,17 +84,20 @@ function Home(props) {
     divider,
     dividerContainer,
     quote,
-    iconsContainer,
     quoteContainer,
     aboutMe,
+    paper,
   } = useStyles()
 
   return (
     <Grid container className={homeContainer}>
       <Grid item xs={12} sm={6} md={8} lg={8}>
-        <Typography variant="h5" className={title}>
-          Hey! I'm Stefana<span>_</span>
-        </Typography>
+        <Paper elevation={3} className={paper}>
+          <Typography variant="h5" className={title}>
+            Hey! I'm Stefana<span>_</span>
+          </Typography>
+        </Paper>
+
         <Typography className={aboutMe}>
           I am a Frontend enthusiast student at The Informal School of IT
           Cluj-Napoca. I am determined and productive, with a passion for
@@ -121,22 +128,7 @@ function Home(props) {
       </Grid>
 
       <Grid item xs={12} sm={12} md={12}>
-        <Box className={iconsContainer}>
-          <Button
-            size="small"
-            href="https://www.linkedin.com/in/andreea-stefana-bonda-9727011b4/"
-            target="_blank"
-          >
-            <LinkedInIcon style={{ fontSize: 50 }} />
-          </Button>
-          <Button
-            size="small"
-            href="https://github.com/bondastefana"
-            target="_blank"
-          >
-            <GitHubIcon style={{ fontSize: 40 }} />
-          </Button>
-        </Box>
+        <Icons />
       </Grid>
     </Grid>
   )
