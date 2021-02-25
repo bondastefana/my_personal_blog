@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 function ProjectCard(props) {
   const { imagePath, title, description, url } = props
-  const mobile = useMediaQuery('(max-width:500px)')
+  const mobile = useMediaQuery('(max-width:600px)')
 
   const {
     cardContainer,
@@ -89,7 +89,7 @@ function ProjectCard(props) {
           <Box className={buttonContainer}>
             <Button
               size={mobile ? 'medium' : 'large'}
-              color="primary"
+              color="secondary"
               variant="outlined"
               onClick={() => {
                 window.open(url, '_blank')
