@@ -120,7 +120,7 @@ function Home(props) {
       <Grid item xs={12} sm={12} md={12} className={quoteContainer}>
         <Divider variant="middle" />
         <Typography align="center" variant="h6" className={quote}>
-          lorem ipsum dolor sit amet bla bla bla
+          "Make everyday a little less ordinary."
         </Typography>
         <div className={dividerContainer}>
           <Divider variant="middle" className={divider} />
