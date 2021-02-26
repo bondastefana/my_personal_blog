@@ -11,6 +11,7 @@ import Icons from '../../components/Icons/Icons.js'
 import ResumeDetails from '../../components/ResumeDetails/ResumeDetails.js'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import clsx from 'clsx'
+import ResumePicture from './ResumePicture.JPG'
 
 const useStyles = makeStyles((theme) => ({
   resumeContainer: {
@@ -22,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   avatar: {
-    height: '130px',
-    width: '130px',
+    height: '200px',
+    width: '200px',
   },
   title: {
     display: 'flex',
@@ -80,13 +81,13 @@ function Resume(props) {
 
   return (
     <Grid container className={resumeContainer}>
-      <Grid item xs={12} sm={5} md={4} lg={5}>
+      <Grid item xs={12} sm={5}>
         <Grid container>
           <Grid item xs={12}>
             <Box className={avatarContainer}>
               <Avatar
                 alt="resume-picture"
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQGTSRQ9UWSO3g/profile-displayphoto-shrink_800_800/0/1596815606145?e=1619654400&v=beta&t=PiBUP8K_EBrE5poGq2hh099Ay5KGldeFTyVLTldS1yc"
+                src={ResumePicture}
                 className={avatar}
               />
             </Box>
@@ -135,7 +136,7 @@ function Resume(props) {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} sm={7} md={8} lg={7}>
+      <Grid item xs={12} sm={7}>
         <ResumeDetails />
       </Grid>
     </Grid>

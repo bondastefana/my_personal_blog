@@ -1,40 +1,71 @@
-import { Grid, Paper, Typography } from '@material-ui/core'
+import { Grid, Paper, Typography, Box } from '@material-ui/core'
 import HobbyAvatar from '../../components/HobbyAvatar/HobbyAvatar.js'
 import { makeStyles } from '@material-ui/core/styles'
 import hobbies from './staticData.js'
 import HobbyModal from '../../components/HobbyModal/HobbyModal.js'
+import { useState } from 'react'
 
 const useStyles = makeStyles((theme) => ({
   hobbiesContainer: {
     padding: '20px 20px',
+    display: 'flex',
+    justifyContent: 'center',
     [theme.breakpoints.up('sm')]: {
-      padding: '45px 20px',
+      padding: '45px 40px',
     },
   },
   paperTitle: {
     padding: '15px 16px',
+    marginBottom: '20px',
+  },
+  pageTitle: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  paperContainer: {
+    [theme.breakpoints.up('sm')]: {
+      margin: '0 40px',
+    },
   },
 }))
 
 function Hobbies(props) {
-  const { paperTitle, pageTitle, hobbiesContainer } = useStyles()
+  const {
+    paperTitle,
+    pageTitle,
+    hobbiesContainer,
+    paperContainer,
+  } = useStyles()
 
-  const openModal = (params) => {
-    console.log(params)
+  const [hobbyDetail, setHobbyDetail] = useState({})
+  const [isOpen, setIsOpen] = useState(false)
+
+  const openModal = (hobbyInfo) => {
+    const { hobbyTitle, hobbyDescription, hobbyImage } = hobbyInfo
+    setHobbyDetail({
+      title: hobbyTitle,
+      description: hobbyDescription,
+      imageUrl: hobbyImage,
+    })
+
+    setIsOpen(true)
   }
 
   return (
     <Grid container className={hobbiesContainer}>
-      <Paper elevation={3} className={paperTitle}>
-        <Typography variant="h5" className={pageTitle}>
-          lorem ipsum dolor sit amet, consectetur adipis
-        </Typography>
-      </Paper>
+      <Grid item xs={12} className={paperContainer}>
+        <Paper elevation={3} className={paperTitle}>
+          <Typography variant="h5" className={pageTitle}>
+            Keep your yor hobbies alive
+          </Typography>
+        </Paper>
+      </Grid>
+
       {hobbies.map((hobby, index) => {
         const { title, description, imageUrl } = hobby
 
         return (
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <HobbyAvatar
               key={index}
               hobbyTitle={title}
@@ -45,7 +76,14 @@ function Hobbies(props) {
           </Grid>
         )
       })}
-      <HobbyModal />
+
+      <HobbyModal
+        hobbyTitle={hobbyDetail.title}
+        hobbyDescription={hobbyDetail.description}
+        hobbyImage={hobbyDetail.imageUrl}
+        open={isOpen}
+        setIsOpen={setIsOpen}
+      />
     </Grid>
   )
 }
