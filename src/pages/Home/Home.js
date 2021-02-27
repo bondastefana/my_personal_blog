@@ -5,6 +5,7 @@ import Avatar from '@material-ui/core/Avatar'
 import Divider from '@material-ui/core/Divider'
 import Paper from '@material-ui/core/Paper'
 import Icons from '../../components/Icons/Icons.js'
+import { useState, useEffect } from 'react'
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
@@ -70,12 +71,20 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: '6px 16px',
-    display: 'flex',
-    justifyContent: 'center',
+    [theme.breakpoints.up('md')]: {
+      padding: '6px 40px',
+    },
+  },
+  isVisible: {
+    display: 'inline',
+  },
+  notVisible: {
+    display: 'none',
   },
 }))
 
 function Home(props) {
+  const [toggle, setToggle] = useState(false)
   const {
     homeContainer,
     avatar,
@@ -87,14 +96,24 @@ function Home(props) {
     quoteContainer,
     aboutMe,
     paper,
+    titleUnderscore,
+    isVisible,
+    notVisible,
   } = useStyles()
+
+  useEffect(() => {
+    setTimeout(() => {
+      setToggle(!toggle)
+    }, 500)
+  }, [toggle])
 
   return (
     <Grid container className={homeContainer}>
       <Grid item xs={12} sm={6} md={8} lg={8}>
         <Paper elevation={3} className={paper}>
           <Typography variant="h5" className={title}>
-            Hey! I'm Stefana<span>_</span>
+            Hey! I'm Stefana
+            <span className={toggle ? isVisible : notVisible}>_</span>
           </Typography>
         </Paper>
 

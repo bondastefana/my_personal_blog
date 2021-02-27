@@ -1,8 +1,9 @@
-import { Grid, Paper, Typography, Box } from '@material-ui/core'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import HobbyAvatar from '../../components/HobbyAvatar/HobbyAvatar.js'
 import { makeStyles } from '@material-ui/core/styles'
 import hobbies from './staticData.js'
 import HobbyModal from '../../components/HobbyModal/HobbyModal.js'
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline'
 import { useState } from 'react'
 
 const useStyles = makeStyles((theme) => ({
@@ -56,7 +57,7 @@ function Hobbies(props) {
       <Grid item xs={12} className={paperContainer}>
         <Paper elevation={3} className={paperTitle}>
           <Typography variant="h5" className={pageTitle}>
-            Keep your yor hobbies alive
+            Keep your hobbies alive
           </Typography>
         </Paper>
       </Grid>
