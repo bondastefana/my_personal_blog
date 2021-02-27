@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/app/static/css/main.30b6c447.chunk.css",
+    "main.js": "/app/static/js/main.b94489df.chunk.js",
+    "main.js.map": "/app/static/js/main.b94489df.chunk.js.map",
+    "runtime-main.js": "/app/static/js/runtime-main.87961248.js",
+    "runtime-main.js.map": "/app/static/js/runtime-main.87961248.js.map",
+    "static/js/2.9d2c2dba.chunk.js": "/app/static/js/2.9d2c2dba.chunk.js",
+    "static/js/2.9d2c2dba.chunk.js.map": "/app/static/js/2.9d2c2dba.chunk.js.map",
+    "static/js/3.3476a930.chunk.js": "/app/static/js/3.3476a930.chunk.js",
+    "static/js/3.3476a930.chunk.js.map": "/app/static/js/3.3476a930.chunk.js.map",
+    "index.html": "/app/index.html",
+    "static/css/main.30b6c447.chunk.css.map": "/app/static/css/main.30b6c447.chunk.css.map",
+    "static/js/2.9d2c2dba.chunk.js.LICENSE.txt": "/app/static/js/2.9d2c2dba.chunk.js.LICENSE.txt",
+    "static/media/AnimalRescue.dcd4f323.jpg": "/app/static/media/AnimalRescue.dcd4f323.jpg",
+    "static/media/AppLogo.d9becdd9.svg": "/app/static/media/AppLogo.d9becdd9.svg",
+    "static/media/Aviation.a419b6bc.jpg": "/app/static/media/Aviation.a419b6bc.jpg",
+    "static/media/BMICalculation.d534436c.png": "/app/static/media/BMICalculation.d534436c.png",
+    "static/media/BookValidation.d8eb1bfa.png": "/app/static/media/BookValidation.d8eb1bfa.png",
+    "static/media/Consolas.b6b2a3b5.ttf": "/app/static/media/Consolas.b6b2a3b5.ttf",
+    "static/media/Dancing.20ef6d5b.jpg": "/app/static/media/Dancing.20ef6d5b.jpg",
+    "static/media/FloralDesign.e603363b.jpg": "/app/static/media/FloralDesign.e603363b.jpg",
+    "static/media/Music.e861a312.jpg": "/app/static/media/Music.e861a312.jpg",
+    "static/media/MyFirstReact.b282b880.png": "/app/static/media/MyFirstReact.b282b880.png",
+    "static/media/MyIMDB.584d117e.png": "/app/static/media/MyIMDB.584d117e.png",
+    "static/media/NasaAPI.c812f83d.png": "/app/static/media/NasaAPI.c812f83d.png",
+    "static/media/OnlineShop.f01ce8c9.png": "/app/static/media/OnlineShop.f01ce8c9.png",
+    "static/media/Poppins.8081832f.ttf": "/app/static/media/Poppins.8081832f.ttf",
+    "static/media/ResumePicture.33f75d4b.JPG": "/app/static/media/ResumePicture.33f75d4b.JPG",
+    "static/media/Traveling.0511271b.jpg": "/app/static/media/Traveling.0511271b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87961248.js",
+    "static/js/2.9d2c2dba.chunk.js",
+    "static/css/main.30b6c447.chunk.css",
+    "static/js/main.b94489df.chunk.js"
+  ]
+}
