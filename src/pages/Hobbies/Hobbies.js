@@ -53,6 +53,7 @@ function Hobbies(props) {
 
   const openModal = (hobbyInfo) => {
     const { hobbyTitle, hobbyDescription, hobbyImage } = hobbyInfo
+
     setHobbyDetail({
       title: hobbyTitle,
       description: hobbyDescription,
