@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       padding: '0 100px',
     },
+    [theme.breakpoints.down('xs')]: {
+      paddingBottom: '15px',
+    },
     backgroundColor: theme.palette.background.footer,
   },
   logoContainer: {
