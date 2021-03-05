@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles'
+import { useState, useEffect } from 'react'
 import {
   Timeline,
   TimelineItem,
@@ -37,15 +38,48 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
   },
+  isVisible: {
+    display: 'inline',
+  },
+  notVisible: {
+    visibility: 'hidden',
+  },
+  employer: {
+    fontFamily: 'Roboto',
+  },
+  position: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '18px',
+    },
+  },
 }))
 
 function ResumeDetails(props) {
-  const { paper, period, timelineContainer, workExp, paperTitle } = useStyles()
+  const [toggle, setToggle] = useState(false)
+  const {
+    paper,
+    period,
+    timelineContainer,
+    workExp,
+    paperTitle,
+    isVisible,
+    notVisible,
+    employer,
+    position,
+  } = useStyles()
+
+  useEffect(() => {
+    setTimeout(() => {
+      setToggle(!toggle)
+    }, 500)
+  }, [toggle])
+
   return (
     <Box className={timelineContainer}>
       <Paper elevation={3} className={paperTitle}>
         <Typography variant="h5" className={workExp}>
-          My Work Experience
+          My Work Experience{' '}
+          <span className={toggle ? isVisible : notVisible}>_</span>
         </Typography>
       </Paper>
       <Timeline align="alternate">
@@ -63,10 +97,12 @@ function ResumeDetails(props) {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={paper}>
-              <Typography variant="h6" component="h1">
+              <Typography className={position} variant="h6" component="h1">
                 Marketing & Floral Design
               </Typography>
-              <Typography color="primary">Lavanda Flowershop</Typography>
+              <Typography className={employer} color="primary">
+                Lavanda Flowershop
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -84,10 +120,12 @@ function ResumeDetails(props) {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={paper}>
-              <Typography variant="h6" component="h1">
+              <Typography className={position} variant="h6" component="h1">
                 Passenger Service Agent
               </Typography>
-              <Typography color="primary">Menzies Aviation</Typography>
+              <Typography className={employer} color="primary">
+                Menzies Aviation
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -109,10 +147,12 @@ function ResumeDetails(props) {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={paper}>
-              <Typography variant="h6" component="h1">
+              <Typography className={position} variant="h6" component="h1">
                 Brand Ambassador
               </Typography>
-              <Typography color="primary">Clock Advertising</Typography>
+              <Typography className={employer} color="primary">
+                Clock Advertising
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -130,10 +170,12 @@ function ResumeDetails(props) {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={paper}>
-              <Typography variant="h6" component="h1">
+              <Typography className={position} variant="h6" component="h1">
                 Call Center Operator
               </Typography>
-              <Typography color="primary">Asitel</Typography>
+              <Typography className={employer} color="primary">
+                Asitel
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>

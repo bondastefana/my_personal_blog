@@ -144,9 +144,10 @@ function Footer(props) {
                 value={name}
                 id="name"
                 name="name"
-                label="Your name..."
+                label="Your name"
                 fullWidth
                 onChange={handleTypingName}
+                required
               />
             </Grid>
             <Grid item xs={6} sm={6} lg={6} className={textField}>
@@ -154,9 +155,10 @@ function Footer(props) {
                 value={email}
                 id="email"
                 name="email"
-                label="Your email..."
+                label="Your email"
                 fullWidth
                 onChange={handleTypingEmail}
+                required
               />
             </Grid>
 
@@ -170,10 +172,16 @@ function Footer(props) {
                 rows={3}
                 fullWidth
                 onChange={handleTypingMessage}
+                required
               />
             </Grid>
             <Grid item xs={12} sm={12} lg={12} className={submitContainer}>
-              <Button type="submit" variant="outlined" size="large">
+              <Button
+                type="submit"
+                variant="outlined"
+                size="large"
+                disabled={!name || !email || !message}
+              >
                 Submit
               </Button>
             </Grid>

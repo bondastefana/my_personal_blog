@@ -9,9 +9,12 @@ import { useState, useEffect } from 'react'
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
-    padding: '20px 50px',
+    padding: '20px 30px',
     [theme.breakpoints.up('sm')]: {
-      padding: '45px 100px',
+      padding: '45px 50px',
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: '45px 80px',
     },
   },
   avatar: {
@@ -26,12 +29,14 @@ const useStyles = makeStyles((theme) => ({
     padding: '20px 10px',
     display: 'flex',
     justifyContent: 'center',
-
     [theme.breakpoints.up('sm')]: {
       paddingTop: '50px',
+      paddingLeft: '30px',
     },
   },
   title: {
+    display: 'flex',
+    justifyContent: 'center',
     [theme.breakpoints.up('sm')]: {
       paddingTop: '20px',
       paddingBottom: '25px',
@@ -40,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '45px',
     },
   },
-
   aboutMe: {
     marginTop: '20px',
     textAlign: 'center',
@@ -48,14 +52,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '25px',
     },
   },
-
   quoteContainer: {
     paddingTop: '50px',
   },
-
   quote: {
     padding: '20px 0',
-    fontFamily: 'Arial',
+    fontFamily: 'Roboto',
+    fontWeight: '100',
   },
   dividerContainer: {
     display: 'flex',
@@ -79,12 +82,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'inline',
   },
   notVisible: {
-    display: 'none',
+    visibility: 'hidden',
   },
 }))
 
 function Home(props) {
   const [toggle, setToggle] = useState(false)
+
   const {
     homeContainer,
     avatar,
@@ -96,7 +100,6 @@ function Home(props) {
     quoteContainer,
     aboutMe,
     paper,
-    titleUnderscore,
     isVisible,
     notVisible,
   } = useStyles()
@@ -139,7 +142,7 @@ function Home(props) {
       <Grid item xs={12} sm={12} md={12} className={quoteContainer}>
         <Divider variant="middle" />
         <Typography align="center" variant="h6" className={quote}>
-          "Make everyday a little less ordinary."
+          Make everyday a little less ordinary!
         </Typography>
         <div className={dividerContainer}>
           <Divider variant="middle" className={divider} />

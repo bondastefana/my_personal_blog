@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
   modalDescription: {
     textAlign: 'center',
     paddingBottom: '30px',
+    fontFamily: 'Roboto',
+    fontWeight: 100,
   },
   closeButtonContainer: {
     display: 'flex',
