@@ -16,6 +16,9 @@ import ResumePicture from './ResumePicture.JPG'
 const useStyles = makeStyles((theme) => ({
   resumeContainer: {
     padding: '45px 0',
+    [theme.breakpoints.up('sm')]: {
+      padding: '45px 20px',
+    },
   },
   avatarContainer: {
     padding: '0 30px 20px 30px',
@@ -30,6 +33,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     padding: '3px 0',
+  },
+  position: {
+    fontFamily: 'Roboto',
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '3px 0',
+    fontWeight: 100,
   },
   name: {
     fontSize: '25px',
@@ -72,6 +82,7 @@ function Resume(props) {
     divider,
     dividerContainer,
     resumeContainer,
+    position,
   } = useStyles()
 
   const resumeLink =
@@ -97,7 +108,7 @@ function Resume(props) {
               <Typography className={clsx(title, name)}>
                 Andreea-Stefana Bonda
               </Typography>
-              <Typography className={title}>Frontend Developer</Typography>
+              <Typography className={position}>Frontend Developer</Typography>
               <Box className={buttonContainer}>
                 <Button
                   size={'small'}
@@ -131,11 +142,11 @@ function Resume(props) {
                 </Typography>
               )}
             </Box>
-
             <Icons />
           </Grid>
         </Grid>
       </Grid>
+
       <Grid item xs={12} sm={7}>
         <ResumeDetails />
       </Grid>

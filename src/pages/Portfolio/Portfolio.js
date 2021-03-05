@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Grid, Typography, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import projectsData from '../../components/ProjectCard/staticData.js'
@@ -32,16 +33,32 @@ const useStyles = makeStyles((theme) => ({
     },
     padding: '6px 16px',
   },
+  isVisible: {
+    display: 'inline',
+  },
+  notVisible: {
+    visibility: 'hidden',
+  },
 }))
 
 function Portfolio(props) {
+  const [toggle, setToggle] = useState(false)
+
   const {
     portfolioContainer,
     title,
     titlePadding,
     titleContainer,
     paper,
+    isVisible,
+    notVisible,
   } = useStyles()
+
+  useEffect(() => {
+    setTimeout(() => {
+      setToggle(!toggle)
+    }, 500)
+  }, [toggle])
 
   return (
     <Grid container className={portfolioContainer}>
@@ -61,6 +78,7 @@ function Portfolio(props) {
           </Typography>
           <Typography variant="h5" className={title}>
             {'}'}
+            <span className={toggle ? isVisible : notVisible}>_</span>
           </Typography>
         </Paper>
       </Grid>
