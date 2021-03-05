@@ -61,7 +61,12 @@ function ProjectCard(props) {
     buttonContainer,
   } = useStyles()
   return (
-    <Card className={cardContainer}>
+    <Card
+      className={cardContainer}
+      onClick={() => {
+        window.open(url, '_blank')
+      }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
