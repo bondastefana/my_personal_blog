@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Grid, Paper, Typography } from '@material-ui/core'
 import HobbyAvatar from '../../components/HobbyAvatar/HobbyAvatar.js'
 import { makeStyles } from '@material-ui/core/styles'
@@ -23,17 +23,12 @@ const useStyles = makeStyles((theme) => ({
   pageTitle: {
     display: 'flex',
     justifyContent: 'center',
+    textAlign: 'center',
   },
   paperContainer: {
     [theme.breakpoints.up('sm')]: {
       margin: '0 40px',
     },
-  },
-  isVisible: {
-    display: 'inline',
-  },
-  notVisible: {
-    visibility: 'hidden',
   },
 }))
 
@@ -43,13 +38,10 @@ function Hobbies(props) {
     pageTitle,
     hobbiesContainer,
     paperContainer,
-    isVisible,
-    notVisible,
   } = useStyles()
 
   const [hobbyDetail, setHobbyDetail] = useState({})
   const [isOpen, setIsOpen] = useState(false)
-  const [toggle, setToggle] = useState(false)
 
   const openModal = (hobbyInfo) => {
     const { hobbyTitle, hobbyDescription, hobbyImage } = hobbyInfo
@@ -62,19 +54,12 @@ function Hobbies(props) {
     setIsOpen(true)
   }
 
-  useEffect(() => {
-    setTimeout(() => {
-      setToggle(!toggle)
-    }, 500)
-  }, [toggle])
-
   return (
     <Grid container className={hobbiesContainer}>
       <Grid item xs={12} className={paperContainer}>
         <Paper elevation={3} className={paperTitle}>
           <Typography variant="h5" className={pageTitle}>
             Keep your hobbies alive
-            <span className={toggle ? isVisible : notVisible}>_</span>
           </Typography>
         </Paper>
       </Grid>

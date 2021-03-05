@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles'
-import { useState, useEffect } from 'react'
 import {
   Timeline,
   TimelineItem,
@@ -58,31 +57,21 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function ResumeDetails(props) {
-  const [toggle, setToggle] = useState(false)
   const {
     paper,
     period,
     timelineContainer,
     workExp,
     paperTitle,
-    isVisible,
-    notVisible,
     employer,
     position,
   } = useStyles()
-
-  useEffect(() => {
-    setTimeout(() => {
-      setToggle(!toggle)
-    }, 500)
-  }, [toggle])
 
   return (
     <Box className={timelineContainer}>
       <Paper elevation={3} className={paperTitle}>
         <Typography variant="h5" className={workExp}>
           My Work Experience{' '}
-          <span className={toggle ? isVisible : notVisible}>_</span>
         </Typography>
       </Paper>
       <Timeline align="alternate">
