@@ -45,11 +45,14 @@ const useStyles = makeStyles((theme) => ({
     visibility: 'hidden',
   },
   employer: {
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '14px',
+    },
   },
   position: {
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '18px',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '15px',
     },
   },
 }))

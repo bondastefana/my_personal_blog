@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     fontSize: '15px',
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
     [theme.breakpoints.up('sm')]: {
       fontSize: '17px',
       minHeight: '140px',

@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   quote: {
     padding: '20px 0',
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
     fontWeight: '100',
   },
   dividerContainer: {
