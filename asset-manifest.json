@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css",
-    "main.js": "/stefana_personal_blog/static/js/main.9937cbea.chunk.js",
-    "main.js.map": "/stefana_personal_blog/static/js/main.9937cbea.chunk.js.map",
+    "main.js": "/stefana_personal_blog/static/js/main.58197fdd.chunk.js",
+    "main.js.map": "/stefana_personal_blog/static/js/main.58197fdd.chunk.js.map",
     "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js",
     "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js.map",
     "static/js/2.7edf2b08.chunk.js": "/stefana_personal_blog/static/js/2.7edf2b08.chunk.js",
@@ -17,7 +17,6 @@
     "static/media/Aviation.a419b6bc.jpg": "/stefana_personal_blog/static/media/Aviation.a419b6bc.jpg",
     "static/media/BMICalculation.d534436c.png": "/stefana_personal_blog/static/media/BMICalculation.d534436c.png",
     "static/media/BookValidation.d8eb1bfa.png": "/stefana_personal_blog/static/media/BookValidation.d8eb1bfa.png",
-    "static/media/Consolas.b6b2a3b5.ttf": "/stefana_personal_blog/static/media/Consolas.b6b2a3b5.ttf",
     "static/media/Dancing.20ef6d5b.jpg": "/stefana_personal_blog/static/media/Dancing.20ef6d5b.jpg",
     "static/media/FloralDesign.e603363b.jpg": "/stefana_personal_blog/static/media/FloralDesign.e603363b.jpg",
     "static/media/Music.e861a312.jpg": "/stefana_personal_blog/static/media/Music.e861a312.jpg",
@@ -25,7 +24,6 @@
     "static/media/MyIMDB.584d117e.png": "/stefana_personal_blog/static/media/MyIMDB.584d117e.png",
     "static/media/NasaAPI.c812f83d.png": "/stefana_personal_blog/static/media/NasaAPI.c812f83d.png",
     "static/media/OnlineShop.f01ce8c9.png": "/stefana_personal_blog/static/media/OnlineShop.f01ce8c9.png",
-    "static/media/Poppins.8081832f.ttf": "/stefana_personal_blog/static/media/Poppins.8081832f.ttf",
     "static/media/ResumePicture.33f75d4b.JPG": "/stefana_personal_blog/static/media/ResumePicture.33f75d4b.JPG",
     "static/media/Traveling.0511271b.jpg": "/stefana_personal_blog/static/media/Traveling.0511271b.jpg"
   },
@@ -33,6 +31,6 @@
     "static/js/runtime-main.feae2ece.js",
     "static/js/2.7edf2b08.chunk.js",
     "static/css/main.30b6c447.chunk.css",
-    "static/js/main.9937cbea.chunk.js"
+    "static/js/main.58197fdd.chunk.js"
   ]
 }
