@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   modalDescription: {
     textAlign: 'center',
     paddingBottom: '30px',
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
     fontWeight: 100,
   },
   closeButtonContainer: {

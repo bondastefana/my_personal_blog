@@ -5,7 +5,6 @@ import Home from './pages/Home/Home.js'
 import Resume from './pages/Resume/Resume.js'
 import Portfolio from './pages/Portfolio/Portfolio.js'
 import Hobbies from './pages/Hobbies/Hobbies.js'
-
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
