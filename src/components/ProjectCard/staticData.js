@@ -4,25 +4,9 @@ import NasaAPI from './NasaAPI.png'
 import BookValidation from './BookValidation.png'
 import BMICalculation from './BMICalculation.png'
 import OnlineShop from './OnlineShop.png'
+import NasaAPI_react from './NasaAPI_react.png'
 
 const projectsData = [
-  {
-    imagePath: MyIMDB,
-    title: 'My IMDB',
-
-    description:
-      'A movie application which I implemented with my colleagues from The Informal School of IT  using React JS. My tasks: Header/Footer components and the Home page - class based components.',
-    url: 'https://github.com/bondastefana/myIMDB_17.1',
-  },
-  {
-    imagePath: MyFirstReact,
-    title: 'My first React project',
-    description:
-      'This project will walk you through the thought process of building a searchable product table using React JS - functional based components. ',
-    url:
-      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week15_react',
-  },
-
   {
     imagePath: NasaAPI,
     title: 'Nasa API',
@@ -58,4 +42,30 @@ const projectsData = [
   },
 ]
 
-export default projectsData
+const projectsDataReact = [
+  {
+    imagePath: MyIMDB,
+    title: 'My IMDB',
+
+    description:
+      'A movie application which I implemented with my colleagues from The Informal School of IT  using React JS. My tasks: Header/Footer components and the Home page - class based components.',
+    url: 'https://github.com/bondastefana/myIMDB_17.1',
+  },
+  {
+    imagePath: NasaAPI_react,
+    title: 'Nasa API ReactJS',
+    description:
+      "Using NASA's Astronomy Picture of the Day API, the user can get the Astronomy Picture of the selected day. Used ReactJS, React Bootstrap and Ajax & Promises.",
+    url: 'https://bondastefana.github.io/NasaAPI_ReactJS/',
+  },
+  {
+    imagePath: MyFirstReact,
+    title: 'My first React project',
+    description:
+      'This project will walk you through the thought process of building a searchable product table using React JS - functional based components. ',
+    url:
+      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week15_react',
+  },
+]
+
+export { projectsData, projectsDataReact }

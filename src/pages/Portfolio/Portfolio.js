@@ -1,6 +1,9 @@
 import { Grid, Typography, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import projectsData from '../../components/ProjectCard/staticData.js'
+import {
+  projectsData,
+  projectsDataReact,
+} from '../../components/ProjectCard/staticData.js'
 import ProjectCard from '../../components/ProjectCard/ProjectCard.js'
 
 const useStyles = makeStyles((theme) => ({
@@ -17,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
+    padding: '10px 0',
+    textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
       fontSize: '17px',
     },
@@ -35,35 +40,39 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function Portfolio(props) {
-  const {
-    portfolioContainer,
-    title,
-    titlePadding,
-    titleContainer,
-    paper,
-  } = useStyles()
+  const { portfolioContainer, title, titleContainer, paper } = useStyles()
 
   return (
     <Grid container className={portfolioContainer}>
       <Grid item xs={12} className={titleContainer}>
         <Paper elevation={3} className={paper}>
           <Typography variant="h5" className={title}>
-            {'if (youWant() === true) {'}
-          </Typography>
-          <Typography variant="h5" className={titlePadding}>
-            {'youCan();'}
-          </Typography>
-          <Typography variant="h5" className={title}>
-            {'} else {'}
-          </Typography>
-          <Typography variant="h5" className={titlePadding}>
-            {'youCant();'}
-          </Typography>
-          <Typography variant="h5" className={title}>
-            {'}'}
+            ReactJS, React Bootstrap, Material UI
           </Typography>
         </Paper>
       </Grid>
+
+      {projectsDataReact.map((project, index) => {
+        return (
+          <Grid item xs={12} md={6}>
+            <ProjectCard
+              key={index}
+              imagePath={project.imagePath}
+              title={project.title}
+              description={project.description}
+              url={project.url}
+            />
+          </Grid>
+        )
+      })}
+      <Grid item xs={12} className={titleContainer}>
+        <Paper elevation={3} className={paper}>
+          <Typography variant="h5" className={title}>
+            HTML, CSS, JavaScript
+          </Typography>
+        </Paper>
+      </Grid>
+
       {projectsData.map((project, index) => {
         return (
           <Grid item xs={12} md={6}>
