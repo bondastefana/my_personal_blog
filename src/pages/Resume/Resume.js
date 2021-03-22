@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '3px 0',
   },
   position: {
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
     display: 'flex',
     justifyContent: 'center',
     padding: '3px 0',

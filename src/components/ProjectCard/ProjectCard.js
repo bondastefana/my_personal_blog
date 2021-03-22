@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     fontSize: '15px',
-    fontFamily: 'Roboto',
+    fontFamily: 'Poppins',
     [theme.breakpoints.up('sm')]: {
       fontSize: '17px',
       minHeight: '140px',
@@ -61,7 +61,12 @@ function ProjectCard(props) {
     buttonContainer,
   } = useStyles()
   return (
-    <Card className={cardContainer}>
+    <Card
+      className={cardContainer}
+      onClick={() => {
+        window.open(url, '_blank')
+      }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
