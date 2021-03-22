@@ -12,7 +12,7 @@ const projectsData = [
 
     description:
       'A movie application which I implemented with my colleagues from The Informal School of IT  using React JS. My tasks: Header/Footer components and the Home page - class based components.',
-    url: 'https://github.com/razvantimis/myIMDB_17.1/',
+    url: 'https://github.com/bondastefana/myIMDB_17.1',
   },
   {
     imagePath: MyFirstReact,
