@@ -53,8 +53,7 @@ const projectsData = [
     title: 'Online Shop',
     description:
       'Using HTML and CSS, I implemented the design for an Online Shop. I also used icons from Font Awesome.',
-    url:
-      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week4_online_shop'
+    url: 'https://bondastefana.github.io/online_shop/'
   }
 ]
 
