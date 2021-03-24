@@ -28,8 +28,7 @@ const projectsData = [
     title: 'Nasa API',
     description:
       "Using NASA's Astronomy Picture of the Day API, the user can get the Astronomy Picture of the selected day. Used HTML, CSS, JavaScript DOM and Ajax & Promises.",
-    url:
-      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week9_NASA_API'
+    url: 'https://bondastefana.github.io/nasa_api_js/'
   },
 
   {
@@ -37,8 +36,7 @@ const projectsData = [
     title: 'Book Validation',
     description:
       'Created a simple book list which displays the book from a list, and also a form where you can add new books to the list. Used HTML, CSS and JavaScript DOM. ',
-    url:
-      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week6_BookList_Validation'
+    url: 'https://bondastefana.github.io/booklist_validation/'
   },
   {
     imagePath: BMICalculation,
@@ -60,11 +58,11 @@ const projectsData = [
 const projectsDataReact = [
   {
     imagePath: MyIMDB,
-    title: 'My IMDB',
+    title: 'IMDB App ReactJS',
 
     description:
       'A movie application which I implemented with my colleagues from The Informal School of IT  using React JS. My tasks: Header/Footer components and the Home page - class based components.',
-    url: 'https://github.com/bondastefana/myIMDB_17.1'
+    url: 'https://bondastefana.github.io/imdb_app_reactjs/'
   },
   {
     imagePath: NasaAPI_react,
@@ -78,8 +76,7 @@ const projectsDataReact = [
     title: 'My first React project',
     description:
       'This project will walk you through the thought process of building a searchable product table using React JS - functional based components. ',
-    url:
-      'https://github.com/bondastefana/SIIT_Bonda_Stefana/tree/master/week15_react'
+    url: 'https://bondastefana.github.io/my_first_react_project/'
   }
 ]
 
