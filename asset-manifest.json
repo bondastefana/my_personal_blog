@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css",
-    "main.js": "/stefana_personal_blog/static/js/main.138d5637.chunk.js",
-    "main.js.map": "/stefana_personal_blog/static/js/main.138d5637.chunk.js.map",
+    "main.js": "/stefana_personal_blog/static/js/main.ae8f6826.chunk.js",
+    "main.js.map": "/stefana_personal_blog/static/js/main.ae8f6826.chunk.js.map",
     "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js",
     "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js.map",
     "static/js/2.63554868.chunk.js": "/stefana_personal_blog/static/js/2.63554868.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/AppLogo.d9becdd9.svg": "/stefana_personal_blog/static/media/AppLogo.d9becdd9.svg",
     "static/media/Aviation.a419b6bc.jpg": "/stefana_personal_blog/static/media/Aviation.a419b6bc.jpg",
     "static/media/BMICalculation.d534436c.png": "/stefana_personal_blog/static/media/BMICalculation.d534436c.png",
-    "static/media/BookValidation.d8eb1bfa.png": "/stefana_personal_blog/static/media/BookValidation.d8eb1bfa.png",
+    "static/media/BookValidation.29728230.png": "/stefana_personal_blog/static/media/BookValidation.29728230.png",
     "static/media/CardPrototype.4ed3574b.png": "/stefana_personal_blog/static/media/CardPrototype.4ed3574b.png",
     "static/media/Dancing.20ef6d5b.jpg": "/stefana_personal_blog/static/media/Dancing.20ef6d5b.jpg",
     "static/media/FloralDesign.e603363b.jpg": "/stefana_personal_blog/static/media/FloralDesign.e603363b.jpg",
@@ -25,7 +25,7 @@
     "static/media/MyIMDB.584d117e.png": "/stefana_personal_blog/static/media/MyIMDB.584d117e.png",
     "static/media/NasaAPI.c812f83d.png": "/stefana_personal_blog/static/media/NasaAPI.c812f83d.png",
     "static/media/NasaAPI_react.5e4c244f.png": "/stefana_personal_blog/static/media/NasaAPI_react.5e4c244f.png",
-    "static/media/NewsWidget.4da05111.png": "/stefana_personal_blog/static/media/NewsWidget.4da05111.png",
+    "static/media/NewsWidget.a7489103.png": "/stefana_personal_blog/static/media/NewsWidget.a7489103.png",
     "static/media/OnlineShop.f01ce8c9.png": "/stefana_personal_blog/static/media/OnlineShop.f01ce8c9.png",
     "static/media/ResumePicture.33f75d4b.JPG": "/stefana_personal_blog/static/media/ResumePicture.33f75d4b.JPG",
     "static/media/Traveling.0511271b.jpg": "/stefana_personal_blog/static/media/Traveling.0511271b.jpg"
@@ -34,6 +34,6 @@
     "static/js/runtime-main.feae2ece.js",
     "static/js/2.63554868.chunk.js",
     "static/css/main.30b6c447.chunk.css",
-    "static/js/main.138d5637.chunk.js"
+    "static/js/main.ae8f6826.chunk.js"
   ]
 }
