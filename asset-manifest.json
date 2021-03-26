@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css",
-    "main.js": "/stefana_personal_blog/static/js/main.ae8f6826.chunk.js",
-    "main.js.map": "/stefana_personal_blog/static/js/main.ae8f6826.chunk.js.map",
+    "main.js": "/stefana_personal_blog/static/js/main.391e3a9e.chunk.js",
+    "main.js.map": "/stefana_personal_blog/static/js/main.391e3a9e.chunk.js.map",
     "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js",
     "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js.map",
     "static/js/2.63554868.chunk.js": "/stefana_personal_blog/static/js/2.63554868.chunk.js",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.feae2ece.js",
     "static/js/2.63554868.chunk.js",
     "static/css/main.30b6c447.chunk.css",
-    "static/js/main.ae8f6826.chunk.js"
+    "static/js/main.391e3a9e.chunk.js"
   ]
 }
