@@ -4,7 +4,7 @@ import {
   Typography,
   Button,
   Divider,
-  Box,
+  Box
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import Icons from '../../components/Icons/Icons.js'
@@ -13,65 +13,65 @@ import useMediaQuery from '@material-ui/core/useMediaQuery'
 import clsx from 'clsx'
 import ResumePicture from './ResumePicture.JPG'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   resumeContainer: {
     padding: '45px 0',
     [theme.breakpoints.up('sm')]: {
-      padding: '45px 20px',
-    },
+      padding: '45px 20px'
+    }
   },
   avatarContainer: {
     padding: '0 30px 20px 30px',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   avatar: {
     height: '200px',
-    width: '200px',
+    width: '200px'
   },
   title: {
     display: 'flex',
     justifyContent: 'center',
-    padding: '3px 0',
+    padding: '3px 0'
   },
   position: {
     fontFamily: 'Poppins',
     display: 'flex',
     justifyContent: 'center',
     padding: '3px 0',
-    fontWeight: 100,
+    fontWeight: 100
   },
   name: {
     fontSize: '25px',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   contentContainer: {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: '20px 0 0 0',
+    padding: '20px 0 0 0'
   },
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
-    padding: '10px 0 20px 0',
+    padding: '10px 0 20px 0'
   },
   dividerContainer: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   divider: {
     width: '50%',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   contactDetails: {
     display: 'flex',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 }))
 
-function Resume(props) {
+function Resume (props) {
   const {
     avatarContainer,
     avatar,
@@ -82,11 +82,11 @@ function Resume(props) {
     divider,
     dividerContainer,
     resumeContainer,
-    position,
+    position
   } = useStyles()
 
   const resumeLink =
-    'https://srv-store5.gofile.io/download/LeQw6t/AndreeaStefanaBondaResume.pdf'
+    'https://srv-store6.gofile.io/download/6RUQJ4/55182fb01bfcd40b2e2e456c1815d96c/AndreeaStefanaBonda_CV.pdf'
 
   const tablet = useMediaQuery('(max-width:1024px)')
 
@@ -97,7 +97,7 @@ function Resume(props) {
           <Grid item xs={12}>
             <Box className={avatarContainer}>
               <Avatar
-                alt="resume-picture"
+                alt='resume-picture'
                 src={ResumePicture}
                 className={avatar}
               />
@@ -112,8 +112,8 @@ function Resume(props) {
               <Box className={buttonContainer}>
                 <Button
                   size={'small'}
-                  color="primary"
-                  variant="outlined"
+                  color='primary'
+                  variant='outlined'
                   onClick={() => {
                     window.open(resumeLink, '_blank')
                   }}
@@ -123,7 +123,7 @@ function Resume(props) {
               </Box>
 
               <div className={dividerContainer}>
-                <Divider variant="middle" className={divider} />
+                <Divider variant='middle' className={divider} />
               </div>
             </Box>
             <Box className={contentContainer}>
