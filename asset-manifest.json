@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css",
-    "main.js": "/stefana_personal_blog/static/js/main.391e3a9e.chunk.js",
-    "main.js.map": "/stefana_personal_blog/static/js/main.391e3a9e.chunk.js.map",
+    "main.js": "/stefana_personal_blog/static/js/main.e23c55a9.chunk.js",
+    "main.js.map": "/stefana_personal_blog/static/js/main.e23c55a9.chunk.js.map",
     "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js",
     "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js.map",
     "static/js/2.63554868.chunk.js": "/stefana_personal_blog/static/js/2.63554868.chunk.js",
@@ -28,12 +28,13 @@
     "static/media/NewsWidget.a7489103.png": "/stefana_personal_blog/static/media/NewsWidget.a7489103.png",
     "static/media/OnlineShop.f01ce8c9.png": "/stefana_personal_blog/static/media/OnlineShop.f01ce8c9.png",
     "static/media/ResumePicture.33f75d4b.JPG": "/stefana_personal_blog/static/media/ResumePicture.33f75d4b.JPG",
-    "static/media/Traveling.0511271b.jpg": "/stefana_personal_blog/static/media/Traveling.0511271b.jpg"
+    "static/media/Traveling.0511271b.jpg": "/stefana_personal_blog/static/media/Traveling.0511271b.jpg",
+    "static/media/profilePicture.e34c8a4c.jpg": "/stefana_personal_blog/static/media/profilePicture.e34c8a4c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.feae2ece.js",
     "static/js/2.63554868.chunk.js",
     "static/css/main.30b6c447.chunk.css",
-    "static/js/main.391e3a9e.chunk.js"
+    "static/js/main.e23c55a9.chunk.js"
   ]
 }
