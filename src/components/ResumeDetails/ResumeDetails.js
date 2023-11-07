@@ -14,6 +14,7 @@ import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver'
 import PhoneIcon from '@material-ui/icons/Phone'
 import SpaIcon from '@material-ui/icons/Spa'
 import Paper from '@material-ui/core/Paper'
+import { Laptop } from '@material-ui/icons'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 
@@ -78,7 +79,76 @@ function ResumeDetails(props) {
         <TimelineItem>
           <TimelineOppositeContent>
             <Typography variant="body2" color="secondary" className={period}>
-              Oct 2020 - Present
+              Jan 2023 - Present
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot color="secondary">
+              <Laptop />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={paper}>
+              <Typography className={position} variant="h6" component="h1">
+                Software Engineer
+              </Typography>
+              <Typography className={employer} color="primary">
+                GEP Solutions Romania
+              </Typography>
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography variant="body2" color="secondary" className={period}>
+              Sept 2021 - Jan 2023
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot color="secondary">
+              <Laptop />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={paper}>
+              <Typography className={position} variant="h6" component="h1">
+                Associate Software Engineer
+              </Typography>
+              <Typography className={employer} color="primary">
+                GEP Solutions Romania
+              </Typography>
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography variant="body2" color="secondary" className={period}>
+              Apr 2021 - Sept 2021
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot color="secondary">
+              <Laptop />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={paper}>
+              <Typography className={position} variant="h6" component="h1">
+                Junior Frontend Developer
+              </Typography>
+              <Typography className={employer} color="primary">
+                Pronovix Hungary
+              </Typography>
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography variant="body2" color="secondary" className={period}>
+              Aug 2019 - Sept 2020
             </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>

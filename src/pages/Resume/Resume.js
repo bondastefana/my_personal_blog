@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function Resume (props) {
+function Resume(props) {
   const {
     avatarContainer,
     avatar,
@@ -86,7 +86,7 @@ function Resume (props) {
   } = useStyles()
 
   const resumeLink =
-    'https://srv-store6.gofile.io/download/6RUQJ4/55182fb01bfcd40b2e2e456c1815d96c/AndreeaStefanaBonda_CV.pdf'
+    'https://andreeastefanabonda-resume.tiiny.site/'
 
   const tablet = useMediaQuery('(max-width:1024px)')
 
