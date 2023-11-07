@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css",
-    "main.js": "/stefana_personal_blog/static/js/main.e23c55a9.chunk.js",
-    "main.js.map": "/stefana_personal_blog/static/js/main.e23c55a9.chunk.js.map",
-    "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js",
-    "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.feae2ece.js.map",
-    "static/js/2.63554868.chunk.js": "/stefana_personal_blog/static/js/2.63554868.chunk.js",
-    "static/js/2.63554868.chunk.js.map": "/stefana_personal_blog/static/js/2.63554868.chunk.js.map",
-    "static/js/3.68192f8a.chunk.js": "/stefana_personal_blog/static/js/3.68192f8a.chunk.js",
-    "static/js/3.68192f8a.chunk.js.map": "/stefana_personal_blog/static/js/3.68192f8a.chunk.js.map",
+    "main.js": "/stefana_personal_blog/static/js/main.d7f3ff76.chunk.js",
+    "main.js.map": "/stefana_personal_blog/static/js/main.d7f3ff76.chunk.js.map",
+    "runtime-main.js": "/stefana_personal_blog/static/js/runtime-main.51a64d0c.js",
+    "runtime-main.js.map": "/stefana_personal_blog/static/js/runtime-main.51a64d0c.js.map",
+    "static/js/2.d7ab66ee.chunk.js": "/stefana_personal_blog/static/js/2.d7ab66ee.chunk.js",
+    "static/js/2.d7ab66ee.chunk.js.map": "/stefana_personal_blog/static/js/2.d7ab66ee.chunk.js.map",
+    "static/js/3.52aabfc5.chunk.js": "/stefana_personal_blog/static/js/3.52aabfc5.chunk.js",
+    "static/js/3.52aabfc5.chunk.js.map": "/stefana_personal_blog/static/js/3.52aabfc5.chunk.js.map",
     "index.html": "/stefana_personal_blog/index.html",
     "static/css/main.30b6c447.chunk.css.map": "/stefana_personal_blog/static/css/main.30b6c447.chunk.css.map",
-    "static/js/2.63554868.chunk.js.LICENSE.txt": "/stefana_personal_blog/static/js/2.63554868.chunk.js.LICENSE.txt",
+    "static/js/2.d7ab66ee.chunk.js.LICENSE.txt": "/stefana_personal_blog/static/js/2.d7ab66ee.chunk.js.LICENSE.txt",
     "static/media/AnimalRescue.dcd4f323.jpg": "/stefana_personal_blog/static/media/AnimalRescue.dcd4f323.jpg",
     "static/media/AppLogo.d9becdd9.svg": "/stefana_personal_blog/static/media/AppLogo.d9becdd9.svg",
     "static/media/Aviation.a419b6bc.jpg": "/stefana_personal_blog/static/media/Aviation.a419b6bc.jpg",
@@ -32,9 +32,9 @@
     "static/media/profilePicture.e34c8a4c.jpg": "/stefana_personal_blog/static/media/profilePicture.e34c8a4c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.feae2ece.js",
-    "static/js/2.63554868.chunk.js",
+    "static/js/runtime-main.51a64d0c.js",
+    "static/js/2.d7ab66ee.chunk.js",
     "static/css/main.30b6c447.chunk.css",
-    "static/js/main.e23c55a9.chunk.js"
+    "static/js/main.d7f3ff76.chunk.js"
   ]
 }
